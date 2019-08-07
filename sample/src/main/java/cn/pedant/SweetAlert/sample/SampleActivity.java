@@ -10,7 +10,6 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-import cn.pedant.SweetAlert.Constants;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class SampleActivity extends Activity implements View.OnClickListener {
@@ -30,7 +29,6 @@ public class SampleActivity extends Activity implements View.OnClickListener {
         };
         for (Integer id : btnIds) {
             findViewById(id).setOnClickListener(this);
-            findViewById(id).setOnTouchListener(Constants.FOCUS_TOUCH_LISTENER);
         }
     }
 

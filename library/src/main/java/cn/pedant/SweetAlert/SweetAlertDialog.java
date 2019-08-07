@@ -27,6 +27,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.button.MaterialButton;
 import com.pnikosis.materialishprogress.ProgressWheel;
 
 import java.util.List;
@@ -62,10 +63,10 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
     private Drawable mCustomImgDrawable;
     private ImageView mCustomImage;
     private LinearLayout mButtonsContainer;
-    private Button mConfirmButton;
+    private MaterialButton mConfirmButton;
     private boolean mHideConfirmButton = false;
-    private Button mCancelButton;
-    private Button mNeutralButton;
+    private MaterialButton mCancelButton;
+    private MaterialButton mNeutralButton;
     private Integer mConfirmButtonBackgroundColor;
     private Integer mConfirmButtonTextColor;
     private Integer mNeutralButtonBackgroundColor;
@@ -203,13 +204,10 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         mButtonsContainer = findViewById(R.id.buttons_container);
         mConfirmButton = findViewById(R.id.confirm_button);
         mConfirmButton.setOnClickListener(this);
-        mConfirmButton.setOnTouchListener(Constants.FOCUS_TOUCH_LISTENER);
         mCancelButton = findViewById(R.id.cancel_button);
         mCancelButton.setOnClickListener(this);
-        mCancelButton.setOnTouchListener(Constants.FOCUS_TOUCH_LISTENER);
         mNeutralButton = findViewById(R.id.neutral_button);
         mNeutralButton.setOnClickListener(this);
-        mNeutralButton.setOnTouchListener(Constants.FOCUS_TOUCH_LISTENER);
         mProgressHelper.setProgressWheel((ProgressWheel) findViewById(R.id.progressWheel));
 
         setTitleText(mTitleText);
@@ -240,7 +238,7 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
 
         adjustButtonContainerVisibility();
 
-        mConfirmButton.setBackgroundResource(R.drawable.green_button_background);
+        //mConfirmButton.setBackgroundResource(R.drawable.green_button_background);
         mErrorFrame.clearAnimation();
         mErrorX.clearAnimation();
         mSuccessTick.clearAnimation();
@@ -392,9 +390,9 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
     private void applyStroke() {
         if (Float.compare(defStrokeWidth, strokeWidth) != 0) {
             Resources r = getContext().getResources();
-            setButtonBackgroundColor(mConfirmButton, r.getColor(R.color.main_green_color));
-            setButtonBackgroundColor(mNeutralButton, r.getColor(R.color.main_disabled_color));
-            setButtonBackgroundColor(mCancelButton, r.getColor(R.color.red_btn_bg_color));
+            //setButtonBackgroundColor(mConfirmButton, r.getColor(R.color.main_green_color));
+            //setButtonBackgroundColor(mNeutralButton, r.getColor(R.color.main_disabled_color));
+            //setButtonBackgroundColor(mCancelButton, r.getColor(R.color.red_btn_bg_color));
         }
     }
 

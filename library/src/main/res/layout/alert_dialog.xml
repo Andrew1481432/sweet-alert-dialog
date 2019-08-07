@@ -182,30 +182,44 @@
             android:paddingTop="10dp"
             android:visibility="visible">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button"
                 android:id="@+id/cancel_button"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/red_button_background"
+                android:backgroundTint="@color/colorAccent"
                 android:visibility="gone"
                 tools:text="cancel"
-                tools:visibility="visible" />
+                tools:visibility="visible"
+                android:lines="1"
+                android:ellipsize="end"/>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button"
                 android:id="@+id/neutral_button"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="-10dp"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/gray_button_background"
+                android:backgroundTint="@color/colorAccent"
                 android:visibility="gone"
                 tools:text="neutral"
-                tools:visibility="gone" />
+                tools:visibility="gone"
+                android:lines="1"
+                android:ellipsize="end"/>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button"
                 android:id="@+id/confirm_button"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
                 android:text="Ok"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:lines="1"
+                android:ellipsize="end"/>
+
         </LinearLayout>
 
 

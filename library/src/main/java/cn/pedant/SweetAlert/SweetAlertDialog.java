@@ -193,8 +193,8 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener
         mCustomViewContainer = findViewById(R.id.custom_view_container);
         mErrorFrame = findViewById(R.id.error_frame);
         mErrorX = mErrorFrame.findViewById(R.id.error_x);
-        mSuccessFrame = findViewById(R.id.success_frame);
         mProgressFrame = findViewById(R.id.progress_dialog);
+        mSuccessFrame = findViewById(R.id.success_frame);
         mSuccessTick = mSuccessFrame.findViewById(R.id.success_tick);
         mSuccessLeftMask = mSuccessFrame.findViewById(R.id.mask_left);
         mSuccessRightMask = mSuccessFrame.findViewById(R.id.mask_right);

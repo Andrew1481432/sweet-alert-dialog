@@ -4,14 +4,12 @@ version = VERSION_NAME
 group = GROUP
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdkVersion = 29
+    buildToolsVersion = "28.0.3"
 
     defaultConfig {
-        minSdkVersion 14
-    }
-
-    lintOptions {
-        abortOnError false
+        minSdkVersion 21
+        targetSdkVersion 29
     }
 }
 
@@ -19,5 +17,3 @@ dependencies {
     implementation 'com.pnikosis:materialish-progress:1.7'
     implementation 'com.google.android.material:material:1.1.0'
 }
-
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'

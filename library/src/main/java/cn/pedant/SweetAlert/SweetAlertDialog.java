@@ -1,6 +1,5 @@
 package cn.pedant.SweetAlert;
 
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
@@ -32,7 +31,9 @@ import com.pnikosis.materialishprogress.ProgressWheel;
 
 import java.util.List;
 
-public class SweetAlertDialog extends Dialog implements View.OnClickListener {
+//TODO whole project needs a rework
+public class SweetAlertDialog extends Dialog implements View.OnClickListener
+{
     private View mDialogView;
     private AnimationSet mModalInAnim;
     private AnimationSet mModalOutAnim;
@@ -89,9 +90,6 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
     public static final int CUSTOM_IMAGE_TYPE = 4;
     public static final int PROGRESS_TYPE = 5;
 
-
-    public static boolean DARK_STYLE = false;
-
     //aliases
     public final static int BUTTON_CONFIRM = DialogInterface.BUTTON_POSITIVE;
     public final static int BUTTON_CANCEL = DialogInterface.BUTTON_NEGATIVE;
@@ -114,7 +112,7 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
     }
 
     public SweetAlertDialog(Context context, int alertType) {
-        super(context, DARK_STYLE ? R.style.alert_dialog_dark : R.style.alert_dialog_light);
+        super(context, R.style.alert_dialog_light);
         setCancelable(true);
         setCanceledOnTouchOutside(true); //TODO was false
 
@@ -184,7 +182,8 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         mOverlayOutAnim.setDuration(120);
     }
 
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alert_dialog);
 

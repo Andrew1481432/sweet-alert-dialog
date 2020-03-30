@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="alert_dialog_light" parent="Theme.MaterialComponents.Dialog">
+    <style name="alert_dialog_light" parent="Theme.MaterialComponents.DayNight.Dialog">
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowIsTranslucent">false</item>
         <item name="android:windowNoTitle">true</item>
@@ -15,14 +15,6 @@
         <item name="sweet_alert_title_text_color">@color/title_color</item>
         <item name="sweet_alert_content_text_color">@color/message_color</item>
     </style>
-
-    <style name="alert_dialog_dark" parent="alert_dialog_light">
-        <item name="android:backgroundDimAmount">0.8</item>
-        <item name="sweet_alert_bg_drawable">@drawable/dialog_background_dark</item>
-        <item name="sweet_alert_title_text_color">@color/title_color_dark</item>
-        <item name="sweet_alert_content_text_color">@color/message_color_dark</item>
-    </style>
-
 
     <style name="dialog_blue_button" parent="android:Widget.Button">
         <item name="android:layout_width">wrap_content</item>

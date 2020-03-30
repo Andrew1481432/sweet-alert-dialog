@@ -127,6 +127,7 @@
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 wheel:matProg_progressIndeterminate="true" />
+
         </FrameLayout>
 
         <TextView
@@ -137,7 +138,7 @@
             android:gravity="center"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:textColor="?attr/sweet_alert_title_text_color"
+            android:textColor="?android:attr/textColorPrimary"
             android:textSize="19sp"
             android:visibility="gone"
             tools:text="Title"
@@ -154,7 +155,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:textAlignment="center"
-            android:textColor="?attr/sweet_alert_content_text_color"
+            android:textColor="?android:attr/textColorSecondary"
             android:textSize="16sp"
             android:visibility="gone"
             tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
@@ -189,6 +190,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="25dp"
                 android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/white"
                 android:visibility="gone"
                 tools:text="cancel"
                 tools:visibility="visible"
@@ -203,6 +205,7 @@
                 android:layout_marginLeft="-10dp"
                 android:layout_marginRight="10dp"
                 android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/white"
                 android:visibility="gone"
                 tools:text="neutral"
                 tools:visibility="gone"
@@ -215,6 +218,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/white"
                 android:text="Ok"
                 android:visibility="gone"
                 android:lines="1"
@@ -222,6 +226,6 @@
 
         </LinearLayout>
 
-
     </LinearLayout>
+
 </FrameLayout>

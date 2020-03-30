@@ -21,6 +21,3 @@ dependencies {
 }
 
 apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
-/* upload command:
-    gradlew -p library clean build uploadArchives --info
- */

@@ -211,25 +211,12 @@ public class SampleActivity extends Activity implements View.OnClickListener {
                 disabledBtnDialog.show();
                 break;
 
-            case R.id.dark_style:
-                if (((CheckBox) v).isChecked()) {
-                    SweetAlertDialog.DARK_STYLE = true;
-                } else {
-                    SweetAlertDialog.DARK_STYLE = false;
-                }
-                break;
-
             case R.id.custom_view_test:
                 final EditText editText = new EditText(this);
                 final CheckBox checkBox = new CheckBox(this);
                 editText.setText("Some edit text");
                 checkBox.setChecked(true);
                 checkBox.setText("Some checkbox");
-
-                if (SweetAlertDialog.DARK_STYLE) {
-                    editText.setTextColor(Color.WHITE);
-                    checkBox.setTextColor(Color.WHITE);
-                }
 
                 LinearLayout linearLayout = new LinearLayout(getApplicationContext());
                 linearLayout.setOrientation(LinearLayout.VERTICAL);

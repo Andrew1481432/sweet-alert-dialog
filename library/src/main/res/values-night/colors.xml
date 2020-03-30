@@ -2,7 +2,7 @@
 <resources>
 
     <color name="colorAccent">#00FF00</color>
-    <color name="dialogBackgroundColor">#FFFFFF</color>
+    <color name="dialogBackgroundColor">#121212</color>
 
     <color name="float_transparent">#00000000</color>
     <!--<color name="custom_float_bg">#96333333</color>-->

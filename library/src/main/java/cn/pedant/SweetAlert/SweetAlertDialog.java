@@ -217,11 +217,8 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener
         setNeutralText(mNeutralText);
         applyStroke();
         setConfirmButtonBackgroundColor(mConfirmButtonBackgroundColor);
-        setConfirmButtonTextColor(mConfirmButtonTextColor);
         setCancelButtonBackgroundColor(mCancelButtonBackgroundColor);
-        setCancelButtonTextColor(mCancelButtonTextColor);
         setNeutralButtonBackgroundColor(mNeutralButtonBackgroundColor);
-        setNeutralButtonTextColor(mNeutralButtonTextColor);
         changeAlertType(mAlertType, true);
 
     }

@@ -35,10 +35,13 @@
     <color name="message_color">#797979</color>
     <color name="message_color_dark">#fff</color>
 
+    <color name="color_btn">@color/main_light_orange_color</color>
+
     <!-- color from original game-->
     <color name="main_green_color">#6bd505</color>
     <color name="main_green_stroke_color">#60bf04</color>
     <color name="main_orange_color">#f77805</color>
+    <color name="main_light_orange_color">#CB994E</color>
     <color name="main_orange_stroke_color">#e66f04</color>
     <color name="main_orange_light_color">#f7b90d</color>
     <color name="main_orange_light_stroke_color">#e4ab0c</color>

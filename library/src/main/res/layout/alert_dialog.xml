@@ -4,6 +4,7 @@
     xmlns:wheel="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
+
     android:background="?attr/sweet_alert_bg_drawable"
     android:layoutDirection="ltr">
 
@@ -134,16 +135,16 @@
             android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:textColor="?android:attr/textColorPrimary"
             android:textSize="19sp"
             android:visibility="gone"
+            android:textStyle="bold"
             tools:text="Title"
             tools:visibility="visible" />
-
 
         <TextView
             android:id="@+id/content_text"
@@ -158,8 +159,7 @@
             android:textColor="?android:attr/textColorSecondary"
             android:textSize="16sp"
             android:visibility="gone"
-            tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-            tools:visibility="visible" />
+            tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
 
         <FrameLayout
             android:id="@+id/custom_view_container"
@@ -215,9 +215,11 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button"
                 android:id="@+id/confirm_button"
-                android:layout_width="wrap_content"
+
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorAccent"
+                android:backgroundTint="@color/color_btn"
+
                 android:textColor="#ffffff"
                 android:text="Ok"
                 android:visibility="gone"

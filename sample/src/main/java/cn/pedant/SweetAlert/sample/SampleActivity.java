@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
@@ -77,20 +78,35 @@ public class SampleActivity extends Activity implements View.OnClickListener {
                         .show();
                 break;
             case R.id.warning_confirm_test:
+//                new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
+//                        .setTitleText("Are you sure?")
+//                        .setContentText("Won't be able to recover this file!")
+//                        .setCancelButton("Yes, delete it!", new SweetAlertDialog.OnSweetClickListener() {
+//                            @Override
+//                            public void onClick(SweetAlertDialog sweetAlertDialog) {
+//                                // reuse previous dialog instance
+//                                sweetAlertDialog.setTitleText("Deleted!")
+//                                        .setContentText("Your imaginary file has been deleted!")
+//                                        .setConfirmClickListener(null)
+//                                        .changeAlertType(SweetAlertDialog.SUCCESS_TYPE);
+//                            }
+//                        })
+//                        .show();
+
+
                 new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
                         .setTitleText("Are you sure?")
-                        .setContentText("Won't be able to recover this file!")
-                        .setCancelButton("Yes, delete it!", new SweetAlertDialog.OnSweetClickListener() {
+                        .setConfirmText("Hello")
+                        .setContentText("Ahahahahaha")
+                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                             @Override
                             public void onClick(SweetAlertDialog sweetAlertDialog) {
-                                // reuse previous dialog instance
-                                sweetAlertDialog.setTitleText("Deleted!")
-                                        .setContentText("Your imaginary file has been deleted!")
-                                        .setConfirmClickListener(null)
-                                        .changeAlertType(SweetAlertDialog.SUCCESS_TYPE);
+                                sweetAlertDialog.dismissWithAnimation();
+                                Toast.makeText(SampleActivity.this, "hello World", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .show();
+
                 break;
             case R.id.warning_cancel_test:
                 new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)

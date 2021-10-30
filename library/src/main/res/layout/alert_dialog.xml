@@ -97,7 +97,7 @@
             android:id="@+id/warning_frame"
             android:layout_width="53dp"
             android:layout_height="53dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:visibility="gone">
 
             <View
@@ -150,7 +150,8 @@
             android:id="@+id/content_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
             android:gravity="center"
             android:maxLines="1000"
             android:paddingLeft="10dp"
@@ -176,9 +177,13 @@
 
         <LinearLayout
             android:id="@+id/buttons_container"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+
             android:gravity="center"
+
             android:paddingBottom="4dp"
             android:paddingTop="10dp"
             android:visibility="visible">
@@ -193,7 +198,6 @@
                 android:textColor="#ffffff"
                 android:visibility="gone"
                 tools:text="cancel"
-                tools:visibility="visible"
                 android:lines="1"
                 android:ellipsize="end"/>
 
@@ -208,26 +212,26 @@
                 android:textColor="#ffffff"
                 android:visibility="gone"
                 tools:text="neutral"
-                tools:visibility="gone"
                 android:lines="1"
                 android:ellipsize="end"/>
 
-            <com.google.android.material.button.MaterialButton
+             <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button"
                 android:id="@+id/confirm_button"
 
+                wheel:cornerRadius="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/color_btn"
+                wheel:rippleColor="@android:color/transparent"
 
                 android:textColor="#ffffff"
                 android:text="Ok"
-                android:visibility="gone"
+                android:stateListAnimator="@null"
+                android:textAllCaps="false"
                 android:lines="1"
                 android:ellipsize="end"/>
 
         </LinearLayout>
-
     </LinearLayout>
-
 </FrameLayout>
